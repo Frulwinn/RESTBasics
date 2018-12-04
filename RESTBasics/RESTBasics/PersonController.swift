@@ -3,6 +3,8 @@ import Foundation
 private let  baseURL = URL(string: "https://swapi.co/api/people/")!
 
 class PersonController {
+    
+    
     func searchForPeople(with searchTerm: String, completion: @escaping ([Person]?, Error?) -> Void) {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)!
         let searchQuaryItem = URLQueryItem(name: "search", value: searchTerm)
@@ -13,5 +15,8 @@ class PersonController {
             completion(nil, NSError())
             return
         }
+        
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = "GET"
     }
 }
