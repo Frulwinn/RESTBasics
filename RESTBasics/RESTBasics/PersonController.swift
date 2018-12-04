@@ -36,7 +36,17 @@ class PersonController {
                 return
             }
             
-            
+            do {
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+                let searchResults = try jsonDecoder.decode(PersonSearchResults.self, from: data)
+                let people = searchResults.results
+                completion(people, nil)
+            } catch {
+                NSLog("unable to decode data into people: \(error)")
+                completion(nil, error)
+                return
+            }
         }
     }
 }
