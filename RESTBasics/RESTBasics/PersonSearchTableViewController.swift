@@ -11,7 +11,7 @@ class PersonSearchTableViewController: UITableViewController, UISearchBarDelegat
         }
     }
     
-    //outlet searchbar
+    @IBOutlet weak var searchBar: UISearchBar!
     
     //implement uisearch bar delegate
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
