@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		489BD8B721B72A0600B46E6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489BD8B621B72A0600B46E6E /* AppDelegate.swift */; };
-		489BD8B921B72A0600B46E6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489BD8B821B72A0600B46E6E /* ViewController.swift */; };
 		489BD8BC21B72A0600B46E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489BD8BA21B72A0600B46E6E /* Main.storyboard */; };
 		489BD8BE21B72A0700B46E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489BD8BD21B72A0700B46E6E /* Assets.xcassets */; };
 		489BD8C121B72A0700B46E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489BD8BF21B72A0700B46E6E /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		489BD8B321B72A0600B46E6E /* RESTBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RESTBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489BD8B621B72A0600B46E6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		489BD8B821B72A0600B46E6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		489BD8BB21B72A0600B46E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		489BD8BD21B72A0700B46E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		489BD8C021B72A0700B46E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				489BD8CA21B72BCF00B46E6E /* PersonController.swift */,
 				489BD8CC21B72BF900B46E6E /* PersonSearchTableViewController.swift */,
 				489BD8CE21B72C0A00B46E6E /* PersonTableViewCell.swift */,
-				489BD8B821B72A0600B46E6E /* ViewController.swift */,
 				489BD8BA21B72A0600B46E6E /* Main.storyboard */,
 				489BD8BD21B72A0700B46E6E /* Assets.xcassets */,
 				489BD8BF21B72A0700B46E6E /* LaunchScreen.storyboard */,
@@ -151,7 +148,6 @@
 				489BD8CB21B72BCF00B46E6E /* PersonController.swift in Sources */,
 				489BD8CD21B72BF900B46E6E /* PersonSearchTableViewController.swift in Sources */,
 				489BD8C921B72BBE00B46E6E /* Person.swift in Sources */,
-				489BD8B921B72A0600B46E6E /* ViewController.swift in Sources */,
 				489BD8B721B72A0600B46E6E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

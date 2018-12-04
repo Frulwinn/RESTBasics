@@ -12,7 +12,7 @@
         <!--Star Wars Search-->
         <scene sceneID="Onn-QD-g7O">
             <objects>
-                <tableViewController id="8hO-w3-tex" sceneMemberID="viewController">
+                <tableViewController id="8hO-w3-tex" customClass="PersonSearchTableViewController" customModule="RESTBasics" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YaW-jI-7k5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="129" id="7jI-ch-bDw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="129" id="7jI-ch-bDw" customClass="PersonTableViewCell" customModule="RESTBasics" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7jI-ch-bDw" id="MnJ-wj-srK">
@@ -59,6 +59,11 @@
                                         <constraint firstItem="TgO-IH-dGk" firstAttribute="leading" secondItem="MnJ-wj-srK" secondAttribute="leadingMargin" constant="10" id="XAJ-BO-Qm9"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birthYearLabel" destination="oM4-mx-EDx" id="3bR-p3-pcp"/>
+                                    <outlet property="genderLabel" destination="RtJ-yT-3Dd" id="xZ6-xv-T76"/>
+                                    <outlet property="nameLabel" destination="SkL-rI-Zag" id="YNS-UP-Kig"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
