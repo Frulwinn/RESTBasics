@@ -4,6 +4,12 @@ private let  baseURL = URL(string: "https://swapi.co/api/people/")!
 
 class PersonController {
     
+    private enum HTTPMethod: String {
+        case get = "GET"
+        case put = "PUT"
+        case post = "POST"
+        case delete = "DELETE"
+    }
     
     func searchForPeople(with searchTerm: String, completion: @escaping ([Person]?, Error?) -> Void) {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)!
