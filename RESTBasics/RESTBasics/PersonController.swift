@@ -23,6 +23,20 @@ class PersonController {
         }
         
         var request = URLRequest(url: requestURL)
-        request.httpMethod = "GET"
+        request.httpMethod = HTTPMethod.get.rawValue
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            if let error = error {
+                NSLog("Error fetching data: \(error)")
+                completion(nil, error)
+            }
+            guard let data = data else {
+                NSLog ("Error fetching data. No data returned")
+                completion(nil, NSError())
+                return
+            }
+            
+            
+        }
     }
 }
