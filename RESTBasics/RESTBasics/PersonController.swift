@@ -47,7 +47,7 @@ class PersonController {
                 completion(nil, error)
                 return
             }
-        }
+        }//.resume
         dataTask.resume()
     }
 }
