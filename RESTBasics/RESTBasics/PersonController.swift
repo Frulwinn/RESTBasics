@@ -48,5 +48,6 @@ class PersonController {
                 return
             }
         }
+        dataTask.resume()
     }
 }
